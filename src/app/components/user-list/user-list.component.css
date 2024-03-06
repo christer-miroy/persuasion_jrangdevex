@@ -1,0 +1,73 @@
+@import '../../styles/variables.css';
+
+.container {
+  padding: 10px 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filterBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  border: 1px solid var(--text-color);
+  background-color: var(--bg);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--text-color);
+  margin-top: 50px;
+}
+
+tr th, tr td {
+  padding: 10px;
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+}
+
+tr td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #465576a1;;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+}
+

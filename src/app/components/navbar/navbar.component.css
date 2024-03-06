@@ -1,0 +1,41 @@
+@import '../../styles/variables.css';
+
+@import '../../styles/variables.css';
+
+.container {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Madimi One", sans-serif;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.link:hover {
+  border: 2px solid antiquewhite;
+  transform: scale(1.2);
+  transition: border 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.active {
+  border-bottom: 2px solid antiquewhite;
+  transform: scale(1);
+  transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+

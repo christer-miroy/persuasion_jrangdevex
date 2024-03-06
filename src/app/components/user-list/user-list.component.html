@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>User List</h1>
+  <div class="filters">
+    <h4>Filter by Gender</h4>
+    <div class="filterBtns">
+      <button (click)="applyFilter('all')" [class.active]="filterGender === 'all'" type="button" class="btn">All Gender</button>
+      <button (click)="applyFilter('male')" [class.active]="filterGender === 'male'" type="button" class="btn">Show Males</button>
+      <button (click)="applyFilter('female')" [class.active]="filterGender === 'female'" type="button" class="btn">Show Females</button>
+    </div>
+  </div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <table *ngIf="!error">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Birthdate</th>
+        <th>Gender</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of filterUsers" >
+          <td>{{ user.id }}</td>
+          <td>{{ user.lastName }}, {{ user.firstName }} {{ user.maidenName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.age }}</td>
+          <td>{{ user.birthDate }}</td>
+          <td>{{ user.gender }}</td>
+          <td><img src="{{ user.image }}" alt="image" class="image"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

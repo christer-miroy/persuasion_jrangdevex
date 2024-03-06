@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #111827;
+  --text-color: #ffffff;
+  --display: flex;
+  --justify-content: center;
+  --align-items: center;
+  --pad: 10px;
+  --ml: 20px;
+  --mr: 20px;
+  --m: 40px 30px;
+  --font: "Inter", sans-serif;
+}

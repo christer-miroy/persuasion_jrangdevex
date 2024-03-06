@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="header">Counter Component</h1>
+
+  <div class="counter">
+    <p class="number">{{ getCount() }}</p>
+    <div class="buttons">
+      <button (click)="increment()" type="button" class="incBtn">Increment</button>
+      <button (click)="decrement()" [disabled]="isDecrementDisabled()" type="button" class="decBtn">
+        Decrement
+      </button>
+    </div>
+  </div>
+</div>
